@@ -1,0 +1,25 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+#{if flash.error}
+  <p style="color:#00FFFF; font-size:25px;">
+     ${flash.error}
+  </p>
+#{/if}
+
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<form action="@{Application.sayHello()}" method="get">
+  <input type="text" name="myName" />
+  <input type="submit" value="Say hello!" />
+</form>
+
+<hr size="10" color="green">
+<form action="@{Application.login()}" method="get">
+   用户名：<input type="text" name="username" /><br/><br/>
+   密   码：<input type="password" name="password" /><br/><br/>
+ <input type="submit" value="提交">
+ </form>
+</html>

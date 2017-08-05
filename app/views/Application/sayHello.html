@@ -1,0 +1,17 @@
+#{extends 'main.html'/}
+
+#{set title: 'Home' /}
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>play-demo</title>
+</head>
+<body>
+  <!-- 使用了Groovy操作符”?:”，该操作符的作用是判断myName参数的值是否为空，若为空则显示默认值。
+所以如果用户没有在表单中输入任何内容，就会显示Hello guest。  -->
+
+<h1>Hello ${myName ?: 'guest'}!</h1>
+<a href = "@{Application.index()}">返 回 首 页</a>
+</body>
+</html>

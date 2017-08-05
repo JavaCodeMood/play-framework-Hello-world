@@ -1,0 +1,5 @@
+31 七月 2017 07:40:28,575 INFO  ~ Starting C:\Users\pc\helloworld
+31 七月 2017 07:40:29,027 WARN  ~ You're running Play! in DEV mode
+31 七月 2017 07:40:29,106 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+31 七月 2017 07:40:38,255 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
+31 七月 2017 07:40:38,275 INFO  ~ Application 'Hello world' is now started !

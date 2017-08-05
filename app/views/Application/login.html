@@ -1,0 +1,20 @@
+#{extends 'main.html'/}
+
+#{set title: 'Home' /}
+
+#{if flash.error}
+  <p style="color:#00FFFF; font-size:25px;">
+     ${flash.error}
+  </p>
+#{/if}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>play</title>
+</head>
+<body>
+<h1 style="color:green;font-size:20px;">欢迎${username},学习play框架！你的密码是：${password}请记住！</h1>
+</body>
+</html>
